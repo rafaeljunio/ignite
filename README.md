@@ -45,12 +45,12 @@ Este projeto foi feito utilizando as seguintes tecnologias:
 
 ```bash
 # Clone o Repositório
-$ git@github.com:rafaeljunio/ignite-reactjs.git
+$ git@github.com:rafaeljunio/Dtmoney.git
 ```
 
 ```bash
 # Acesse a pasta do projeto
-$ cd dtmoney
+$ cd Dtmoney
 ```
 
 ```bash
