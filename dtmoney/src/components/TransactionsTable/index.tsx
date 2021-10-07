@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+
 import { useTransactions } from '../../hooks/useTransactions';
 import { Container } from './styles';
 
@@ -11,7 +11,7 @@ export function TransactionsTable() {
             <table>
                 <thead>
                     <tr>
-                        <th>Títudo</th>
+                        <th>Título</th>
                         <th>Valor</th>
                         <th>Category</th>
                         <th>Data</th>

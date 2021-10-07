@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createServer, Model } from 'miragejs';
+import { createServer, Model, Server } from 'miragejs';
 import { App } from './App';
 
-createServer({
+let server = new Server({
 
   models: {
     transaction: Model,
@@ -22,7 +22,7 @@ createServer({
         },
         {
           id: 2,
-          title: 'Aluguele',
+          title: 'Aluguel',
           type: 'withdraw',
           category: 'Dev',
           amount: 1100,
