@@ -1,34 +1,107 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+   <img src="https://raw.githubusercontent.com/tavareshenrique/ignite-reactjs/84a216ea852ad8929e8441923658957662a14169/03-ignews/public/images/logo.svg" alt="IG News" width="280"/>
+</p>
 
-## Getting Started
+<p align="center">
 
-First, run the development server:
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-eba417">
+</p>
+
+> <b>ig.news</b> é o terceiro projeto criado no chapter 3 da trilha de React do Ignite da [Rocketseat](https://github.com/Rocketseat). O projeto consiste num blog onde para ler algum psoto você deverá ser assinante, e é usado a API do [Stripe](https://stripe.com/) para o controle de pagamento e salvando os dados dos inscritos no FaunaDB.
+
+# :pushpin: Conteúdo
+
+- [Tecnologias](#computer-tecnologias)
+- [Executando](#construction_worker-executando)
+- [Desafios](#atom_symbol-desafios)
+- [Autores](#computer-autores)
+- [Licença](#closed_book-licença)
+
+### Fotos
+
+<div>
+   <img src="https://raw.githubusercontent.com/tavareshenrique/ignite-reactjs/main/03-ignews/src/assets/previews/preview1.png" width="500px" />
+   <img src="https://raw.githubusercontent.com/tavareshenrique/ignite-reactjs/main/03-ignews/src/assets/previews/preview2.png" width="500px" />
+   <img src="https://raw.githubusercontent.com/tavareshenrique/ignite-reactjs/main/03-ignews/src/assets/previews/preview3.png" width="500px" />
+   <img src="https://raw.githubusercontent.com/tavareshenrique/ignite-reactjs/main/03-ignews/src/assets/previews/preview4.png" width="500px" />
+</div>
+
+# :computer: Tecnologias
+
+Este projeto foi feito utilizando as seguintes tecnologias:
+
+- [React](https://reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [NextJS](https://nextjs.org/)
+- [FaunaDB](https://fauna.com/)'
+- [Axios](https://github.com/axios/axios)
+- [Prismic](https://prismic.io/)
+- [Stripe](https://stripe.com/)
+- [Sass](https://sass-lang.com/)
+- [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+
+# :construction_worker: Executando
 
 ```bash
-npm run dev
-# or
-yarn dev
+# Clone o Repositório
+$ git@github.com:rafaeljunio/ignite-reactjs.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
+# Acesse a pasta do projeto
+$ cd 02-ignews
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+# Crie um arquivo .env.local e configure as váriaveis de ambiente
+# Stripe
+STRIPE_API_KEY=
+NEXT_PUBLIC_STRIPE_PUBLIC_KEY=
+STRIPE_API_PRICE_KEY=
+STRIPE_WEBHOOK_SECRET=
+STRIPE_SUCESS_URL=
+STRIPE_CANCEL_URL=
+# Github
+GITHUB_CLIENT_ID=
+GITHUB_CLIENT_SECRET=
+# FaunaDB
+FAUNADB_KEY=
+# Prismic CMS
+PRISMIC_ENDPOINT=
+PRISMIC_ACCESS_TOKEN=
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```bash
+# Baixe as dependendências
+$ yarn
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+# Execute
+$ yarn start
+```
 
-## Learn More
+Acesse <http://localhost:3000> para ver o resultado.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# :computer: Autor
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<table>
+  <tr>
+    <td align="center">
+      <a href="http://github.com/rafaeljunio/">
+        <img src="https://avatars.githubusercontent.com/u/6124403?v=4" width="100px;" alt="Rafael Junio"/>
+        <br />
+        <sub>
+          <b>Rafael Junio</b>
+        </sub>
+       </a>
+       <br />
+    </td>
+  </tr>
+</table>
 
-## Deploy on Vercel
+# :closed_book: Licença
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Este projeto está sob a licença [MIT](./LICENSE).
